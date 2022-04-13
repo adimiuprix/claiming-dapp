@@ -23,6 +23,9 @@ export const theme = createTheme({
       text: {
         primary: '#edc681',
       },
+      background: {
+        default: 'radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(41,41,51,1) 35%, rgba(0,0,0,1) 100%)',
+      },
     },
     typography: {
       body2: {
@@ -30,9 +33,18 @@ export const theme = createTheme({
       },
       h6: {
         fontWeight: 400,
-      }
+      },
     },
     boxWidth: {
       main: '28%',
+    },
+    components: {
+      MuiCssBaseline: {
+        styleOverrides: {
+          body: {
+            background: 'radial-gradient(circle, rgba(51,51,51,1) 0%, rgba(41,41,51,1) 35%, rgba(0,0,0,1) 100%)',
+          }
+        }
+      }
     }
   })

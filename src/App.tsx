@@ -5,6 +5,7 @@ import ClaimBox from './components/ClaimBox';
 import Footer from './components/Footer';
 import {ThemeProvider} from '@mui/material';
 import {theme} from './theme/theme';
+import { CssBaseline } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import LanguageButton from './components/LanguageButton';
 
@@ -26,10 +27,11 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Logo />
-      <LanguageButton lang={lang} changeLanguage={changeLanguage} />
-      <ClaimBox />
-      <Footer />
+      <CssBaseline />
+        <Logo />
+        <LanguageButton lang={lang} changeLanguage={changeLanguage} />
+        <ClaimBox />
+        <Footer />
     </ThemeProvider>
   );
 }
