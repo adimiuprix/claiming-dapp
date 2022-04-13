@@ -1,0 +1,14 @@
+{
+    "footer": {
+        "copyright": "prawa autorskie © ",
+        "synapse": "synapse.network",
+        "version": "2021 v1.1"
+    },
+    "claimfield": {
+        "wallet": "Adres portfela",
+        "total": "Razem tokeny",
+        "claimed": "Odebrane tokeny",
+        "left": "Lewe tokeny",
+        "toclaim": "Tokeny do odebrania"
+    }
+  }
