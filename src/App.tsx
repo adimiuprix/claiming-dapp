@@ -7,6 +7,7 @@ import {ThemeProvider} from '@mui/material';
 import {theme} from './theme/theme';
 import { CssBaseline } from '@mui/material';
 import { useTranslation } from 'react-i18next';
+import {Language} from './constants/languages';
 import LanguageButton from './components/LanguageButton';
 
 
@@ -14,14 +15,14 @@ const App: React.FC = () => {
 
   const { i18n } = useTranslation();
 
-  const [lang, setLang] = useState<string>('pl')
+  const [lang, setLang] = useState<Language>(Language.polish)
 
   useEffect(() => {
-    i18n.changeLanguage('en');
+    i18n.changeLanguage(Language.english);
   }, [])
 
   const changeLanguage: React.MouseEventHandler<HTMLButtonElement> = () => {
-    lang === 'en' ? setLang('pl') : setLang('en')
+    lang === Language.english ? setLang(Language.polish) : setLang(Language.english)
     i18n.changeLanguage(lang);
   }
 

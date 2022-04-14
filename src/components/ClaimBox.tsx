@@ -9,7 +9,7 @@ const ClaimBox: React.FC = () => {
 
     return (
         <Box sx={{marginTop: 4, display: 'flex', justifyContent: 'center'}}>
-            <Card elevation={3} sx={{minWidth: 'boxWidth.main', py: 3, px: 2, bgcolor: 'primary.bgcolor'}}>
+            <Card elevation={3} sx={{minWidth: 'boxWidth.main', py: 3, px: 2, bgcolor: 'extraBackground.main'}}>
                 <CardContent sx={{display: 'flex', flexDirection: 'column', 'justifyContent': 'space-evenly'}}>
 
                     {fields.map((field) => {
