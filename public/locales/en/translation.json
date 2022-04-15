@@ -1,0 +1,14 @@
+{
+  "footer": {
+      "copyright": "Copyright © ",
+      "synapse": "synapse.network",
+      "version": "2021 v1.1"
+  },
+  "claimfield": {
+      "wallet": "Wallet Address",
+      "total": "Total Tokens",
+      "claimed": "Claimed Tokens",
+      "left": "Left Tokens",
+      "toclaim": "Tokens to Claim"
+  }
+}
